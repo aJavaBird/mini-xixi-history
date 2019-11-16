@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <!-- block标签 并不是一个组件，它仅仅是一个包装元素，不会在页面中做任何渲染，只接受控制属性。比如 block wx:if，也可以将 wx:for 用在<block/>标签上 -->
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <!-- 自定义属性时（如我想自定义属性 href），需要以 data- 开头，这样，在 bindtap 的事件中，可以通过 e.currentTarget.dataset.href 获取到自定义属性 -->
+    <button class="btn btn-olive" data-href="../timer/timer" bindtap="toPage">计时器</button>
+    <button class="btn btn-red" data-href="../calendar/calendar" bindtap="toPage">日历日程</button>
+    <button class="btn btn-cyan" data-href="" data-msg="敬请期待！" bindtap="showMsg">中国象棋</button>
+    <!-- <button class="btn btn-mauve" data-href="" data-msg="敬请期待！" bindtap="showMsg">敬请期待</button>
+    <button class="btn btn-pink" data-href="" data-msg="敬请期待！" bindtap="showMsg">敬请期待</button>
+    -->
+    <!-- 微信小程序里面的换行和空格只能在<text></text>里面写，换行是：\n空格是：\t -->
+    <text>\t</text>
+
+    <!-- 使用组件中的事件:  这里要注意bind:后面的 error 是 this.triggerEvent() 的第一个参数: 自定义事件名称 
+          例如: 组件中写了 this.triggerEvent('error1') 此处 就要写成 bind:error1="hideMsg"
+     -->
+    <popup id='popup' title='提示' content='{{popMsg}}' btn_no='取消' btn_no_show='false' btn_ok='确定' bind:error="hideMsg" bind:success="hideMsg">
+    </popup>
+  </view>
+</view>

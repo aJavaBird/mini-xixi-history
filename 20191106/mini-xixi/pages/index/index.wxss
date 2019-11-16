@@ -1,0 +1,87 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 50rpx;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.btn {
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  height: 60rpx;
+  line-height: 1;
+  background: transparent;
+  margin-bottom: 20rpx;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.btn:after {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 60rpx;
+}
+
+.btn-olive {
+  color: #8dc63f;
+}
+
+.btn-olive:after {
+  border-color: #8dc63f;
+}
+
+.btn-red {
+  color: #e54d42;
+}
+
+.btn-red:after {
+  border-color: #e54d42;
+}
+
+.btn-mauve {
+  color: #9c26b0;
+}
+
+.btn-mauve:after {
+  border-color: #9c26b0;
+}
+
+.btn-cyan {
+  color: #1cbbb4;
+}
+
+.btn-cyan:after {
+  border-color: #1cbbb4;
+}
+
+.btn-pink {
+  color: #e03997;
+}
+
+.btn-pink:after {
+  border-color: #e03997;
+}
+
+
+
+
+

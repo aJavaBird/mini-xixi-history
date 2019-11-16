@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <!-- block标签 并不是一个组件，它仅仅是一个包装元素，不会在页面中做任何渲染，只接受控制属性。比如 block wx:if，也可以将 wx:for 用在<block/>标签上 -->
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <!-- 自定义属性时（如我想自定义属性 href），需要以 data- 开头，这样，在 bindtap 的事件中，可以通过 e.currentTarget.dataset.href 获取到自定义属性 -->
+    <text class="user-motto" data-href="../timer/timer" bindtap="toPage">计时器</text>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+.usermotto {
+  margin-top: 50px;
+}
+
+.seconds-div {
+  display: block;
+  height: 5rem;
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.seconds-txt {
+  font-size: 2rem;
+  /* 字体粗细，100--900，lighter，400==normal，700==bold，bolder */
+  font-wight: 600;
+}
+
+

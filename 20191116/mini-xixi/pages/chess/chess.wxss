@@ -1,0 +1,218 @@
+
+.chessboard-bg {    
+    height: 80vh;
+    width: 100vw;
+    position: absolute;
+    top:0;
+    z-index:5;
+}
+
+.chessmam {
+    height: 6vh;
+    width: 10vw;
+    position: absolute;
+    z-index: 10;
+}
+
+.hide {
+    display: none;
+}
+
+.chess-0-0 {top: 5vh;left: 2vw;}
+
+.chess-1-0 {top: 5vh;left: 12.75vw;}
+
+.chess-2-0 {top: 5vh;left: 23.5vw;}
+
+.chess-3-0 {top: 5vh;left: 34.25vw;}
+
+.chess-4-0 {top: 5vh;left: 45vw;}
+
+.chess-5-0 {top: 5vh;left: 55.75vw;}
+
+.chess-6-0 {top: 5vh;left: 66.5vw;}
+
+.chess-7-0 {top: 5vh;left: 77.25vw;}
+
+.chess-8-0 {top: 5vh;left: 88vw;}
+
+.chess-0-1 {top: 12.1vh;left: 2vw;}
+
+.chess-1-1 {top: 12.1vh;left: 12.75vw;}
+
+.chess-2-1 {top: 12.1vh;left: 23.5vw;}
+
+.chess-3-1 {top: 12.1vh;left: 34.25vw;}
+
+.chess-4-1 {top: 12.1vh;left: 45vw;}
+
+.chess-5-1 {top: 12.1vh;left: 55.75vw;}
+
+.chess-6-1 {top: 12.1vh;left: 66.5vw;}
+
+.chess-7-1 {top: 12.1vh;left: 77.25vw;}
+
+.chess-8-1 {top: 12.1vh;left: 88vw;}
+
+.chess-0-2 {top: 19.2vh;left: 2vw;}
+
+.chess-1-2 {top: 19.2vh;left: 12.75vw;}
+
+.chess-2-2 {top: 19.2vh;left: 23.5vw;}
+
+.chess-3-2 {top: 19.2vh;left: 34.25vw;}
+
+.chess-4-2 {top: 19.2vh;left: 45vw;}
+
+.chess-5-2 {top: 19.2vh;left: 55.75vw;}
+
+.chess-6-2 {top: 19.2vh;left: 66.5vw;}
+
+.chess-7-2 {top: 19.2vh;left: 77.25vw;}
+
+.chess-8-2 {top: 19.2vh;left: 88vw;}
+
+.chess-0-3 {top: 26.3vh;left: 2vw;}
+
+.chess-1-3 {top: 26.3vh;left: 12.75vw;}
+
+.chess-2-3 {top: 26.3vh;left: 23.5vw;}
+
+.chess-3-3 {top: 26.3vh;left: 34.25vw;}
+
+.chess-4-3 {top: 26.3vh;left: 45vw;}
+
+.chess-5-3 {top: 26.3vh;left: 55.75vw;}
+
+.chess-6-3 {top: 26.3vh;left: 66.5vw;}
+
+.chess-7-3 {top: 26.3vh;left: 77.25vw;}
+
+.chess-8-3 {top: 26.3vh;left: 88vw;}
+
+.chess-0-4 {top: 33.4vh;left: 2vw;}
+
+.chess-1-4 {top: 33.4vh;left: 12.75vw;}
+
+.chess-2-4 {top: 33.4vh;left: 23.5vw;}
+
+.chess-3-4 {top: 33.4vh;left: 34.25vw;}
+
+.chess-4-4 {top: 33.4vh;left: 45vw;}
+
+.chess-5-4 {top: 33.4vh;left: 55.75vw;}
+
+.chess-6-4 {top: 33.4vh;left: 66.5vw;}
+
+.chess-7-4 {top: 33.4vh;left: 77.25vw;}
+
+.chess-8-4 {top: 33.4vh;left: 88vw;}
+
+.chess-0-5 {top: 40.5vh;left: 2vw;}
+
+.chess-1-5 {top: 40.5vh;left: 12.75vw;}
+
+.chess-2-5 {top: 40.5vh;left: 23.5vw;}
+
+.chess-3-5 {top: 40.5vh;left: 34.25vw;}
+
+.chess-4-5 {top: 40.5vh;left: 45vw;}
+
+.chess-5-5 {top: 40.5vh;left: 55.75vw;}
+
+.chess-6-5 {top: 40.5vh;left: 66.5vw;}
+
+.chess-7-5 {top: 40.5vh;left: 77.25vw;}
+
+.chess-8-5 {top: 40.5vh;left: 88vw;}
+
+.chess-0-6 {top: 47.6vh;left: 2vw;}
+
+.chess-1-6 {top: 47.6vh;left: 12.75vw;}
+
+.chess-2-6 {top: 47.6vh;left: 23.5vw;}
+
+.chess-3-6 {top: 47.6vh;left: 34.25vw;}
+
+.chess-4-6 {top: 47.6vh;left: 45vw;}
+
+.chess-5-6 {top: 47.6vh;left: 55.75vw;}
+
+.chess-6-6 {top: 47.6vh;left: 66.5vw;}
+
+.chess-7-6 {top: 47.6vh;left: 77.25vw;}
+
+.chess-8-6 {top: 47.6vh;left: 88vw;}
+
+.chess-0-7 {top: 54.7vh;left: 2vw;}
+
+.chess-1-7 {top: 54.7vh;left: 12.75vw;}
+
+.chess-2-7 {top: 54.7vh;left: 23.5vw;}
+
+.chess-3-7 {top: 54.7vh;left: 34.25vw;}
+
+.chess-4-7 {top: 54.7vh;left: 45vw;}
+
+.chess-5-7 {top: 54.7vh;left: 55.75vw;}
+
+.chess-6-7 {top: 54.7vh;left: 66.5vw;}
+
+.chess-7-7 {top: 54.7vh;left: 77.25vw;}
+
+.chess-8-7 {top: 54.7vh;left: 88vw;}
+
+.chess-0-8 {top: 61.8vh;left: 2vw;}
+
+.chess-1-8 {top: 61.8vh;left: 12.75vw;}
+
+.chess-2-8 {top: 61.8vh;left: 23.5vw;}
+
+.chess-3-8 {top: 61.8vh;left: 34.25vw;}
+
+.chess-4-8 {top: 61.8vh;left: 45vw;}
+
+.chess-5-8 {top: 61.8vh;left: 55.75vw;}
+
+.chess-6-8 {top: 61.8vh;left: 66.5vw;}
+
+.chess-7-8 {top: 61.8vh;left: 77.25vw;}
+
+.chess-8-8 {top: 61.8vh;left: 88vw;}
+
+.chess-0-9 {top: 68.9vh;left: 2vw;}
+
+.chess-1-9 {top: 68.9vh;left: 12.75vw;}
+
+.chess-2-9 {top: 68.9vh;left: 23.5vw;}
+
+.chess-3-9 {top: 68.9vh;left: 34.25vw;}
+
+.chess-4-9 {top: 68.9vh;left: 45vw;}
+
+.chess-5-9 {top: 68.9vh;left: 55.75vw;}
+
+.chess-6-9 {top: 68.9vh;left: 66.5vw;}
+
+.chess-7-9 {top: 68.9vh;left: 77.25vw;}
+
+.chess-8-9 {top: 68.9vh;left: 88vw;}
+
+.chess-button-view {
+    position: absolute;
+    top:82vh;
+    z-index:5;
+}
+
+.chess-button {
+    display: inline-block;
+    background-color: #E8F752;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.chess-button-regret {
+    margin-left: 0.7rem;
+    background-color: #0AC452;
+}
+

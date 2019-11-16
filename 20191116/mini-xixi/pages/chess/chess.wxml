@@ -1,0 +1,23 @@
+﻿<!--chess.wxml-->
+<view>
+  <image src="./images/bg.png" class="chessboard-bg" mode="scaleToFill"></image>
+  
+  <block wx:for="{{chess}}" wx:for-index="idy" wx:for-item="item"> 
+    <block wx:for="{{item}}" wx:for-index="idx" wx:for-item="pic_name"> 
+      <image src="{{pic_name?'./images/'+pic_name+'.png':'./images/none.png'}}" class="chessmam chess-{{idx}}-{{idy}}" bindtap="tapChessMan" data-x="{{idx}}" data-y="{{idy}}" data-isman="{{pic_name?'1':''}}" mode="scaleToFill"></image>
+    </block>
+  </block>
+
+  <image src="./images/r_box.png" class="chessmam chess-{{x}}-{{y}} {{x===''?'hide':''}}" mode="scaleToFill"></image>
+  <image src="./images/r_box.png" class="chessmam chess-{{nx}}-{{ny}} {{nx===''?'hide':''}}" mode="scaleToFill"></image>
+
+</view>
+<view class="chess-button-view">
+    <button bindtap="showPlayMsg" data-msg="确认开始入门级对弈？" data-next_depth="1" class="chess-button">入门级</button>
+    <button bindtap="showPlayMsg" data-msg="确认开始新手级对弈？" data-next_depth="2" class="chess-button">新手级</button>
+    <button bindtap="showPlayMsg" data-msg="确认开始中等级对弈？" data-next_depth="4" class="chess-button">中等级</button>
+    <button bindtap="tapRegret" class="chess-button chess-button-regret">悔  棋</button>
+</view>
+
+<popup id='popup' title='提示' content='{{popMsg}}' btn_no='取消' btn_no_show='true' btn_ok='确定' bind:error="hidePlayMsg" bind:success="doPlay">
+</popup>

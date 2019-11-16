@@ -1,0 +1,14 @@
+<!--timer.wxml-->
+<view class="container">
+  <text class="user-motto">记下你的每一秒</text>
+  <view class="seconds-div">
+    <view style="display: inline-block;width: 30%;text-align: right;"><text class="seconds-txt">{{seconds}}</text></view>
+    <text class="seconds-txt">{{dot}}</text>
+    <view style="display: inline-block;width: 30%;text-align: left;"><text class="seconds-txt">{{milliseconds}}</text></view>
+  </view>
+  <view style="width: 80%;">
+    <button bindtap="startTiming" style="background-color: #33BA26">{{timeingText}}</button>
+    <button bindtap="restartTiming" style="margin-top: 0.5rem ; background-color: #E8F752">重新开始</button>
+  </view>
+  
+</view>

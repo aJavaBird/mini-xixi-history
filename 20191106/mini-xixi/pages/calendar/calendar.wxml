@@ -1,0 +1,8 @@
+<!--calendar.wxml-->
+<view>
+  <calendar 
+    calendarConfig="{{calendarConfig}}" 
+    bind:onSwipe="onSwipe"
+    bind:afterCalendarRender="afterCalendarRender"
+    bind:whenChangeMonth="whenChangeMonth"></calendar>
+</view>
